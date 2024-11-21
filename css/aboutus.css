@@ -1,0 +1,496 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto+Sans+SC", "Courier New", Courier, monospace;
+}
+
+body header {
+  position: sticky;
+  top: 0;
+  z-index: 1000000000;
+}
+body header nav.wrapper-banner {
+  background: linear-gradient(to right, #333333, #4e4d4d);
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+}
+body header nav.wrapper-banner nav.wrapper {
+  width: 100%;
+  display: flex;
+}
+body header nav.wrapper-banner nav.wrapper div.air {
+  flex: 1 1 20px;
+}
+body header nav.wrapper-banner nav.wrapper div.left {
+  flex: 3 1 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav.wrapper-banner nav.wrapper div.left div.logo {
+  width: 65px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  position: relative;
+  z-index: 9;
+}
+body header nav.wrapper-banner nav.wrapper div.left div.logo-name {
+  font-size: 22px;
+  font-weight: bolder;
+  color: white;
+}
+body header nav.wrapper-banner nav.wrapper div.middle {
+  flex: 4 1 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div a:hover {
+  color: #55a5f6;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer {
+  position: relative;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 {
+  overflow: hidden;
+  transition: height ease-in-out;
+  transition-duration: 0.2s;
+  position: absolute;
+  width: 1920px;
+  height: 0px;
+  top: 36px;
+  left: -800px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20px;
+  border-right: 2px solid gray;
+  height: 500px;
+  flex-direction: column; /* 设置为竖向排列 */
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.name {
+  font-size: small;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.demo {
+  margin-top: 20px;
+  display: flex;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.demo i {
+  font-size: 20px;
+  flex: 1 1 20px;
+  color: #0e86ff;
+  padding-right: 10px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.demo p {
+  padding: 0;
+  margin: 0;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.demo p.b {
+  font-size: larger;
+  font-weight: bolder;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-1 div.demo p.b b.new {
+  color: red;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20px;
+  border-right: 2px solid gray;
+  height: 500px;
+  flex-direction: column; /* 设置为竖向排列 */
+  margin-left: 20px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.name {
+  font-size: small;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.demo {
+  margin-top: 20px;
+  display: flex;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.demo i {
+  font-size: 20px;
+  flex: 1 1 20px;
+  color: #0e86ff;
+  padding-right: 10px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.demo p {
+  padding: 0;
+  margin: 0;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.demo p.b {
+  font-size: larger;
+  font-weight: bolder;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-2 div.demo p.b b.new {
+  color: red;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 20px;
+  padding-right: 20px;
+  border-right: 2px solid gray;
+  height: 500px;
+  flex-direction: column; /* 设置为竖向排列 */
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.name {
+  font-size: small;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.demo {
+  margin-top: 20px;
+  display: flex;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.demo i {
+  font-size: 20px;
+  flex: 1 1 20px;
+  color: #0e86ff;
+  padding-right: 10px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.demo p {
+  padding: 0;
+  margin: 0;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.demo p.b {
+  font-size: larger;
+  font-weight: bolder;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer div.infomation1 div.info-3 div.demo p.b b.new {
+  color: red;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.produceServer:hover div.infomation1 {
+  height: 600px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API {
+  position: relative;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 {
+  overflow: hidden;
+  display: flex;
+  transition: height ease-in-out;
+  transition-duration: 0.2s;
+  position: absolute;
+  width: 1920px;
+  height: 0px;
+  top: 36px;
+  left: -700px;
+  background-color: white;
+  z-index: 10;
+  justify-content: center;
+  align-items: baseline;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 div.info-1 {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20px;
+  height: 500px;
+  flex-direction: column; /* 设置为竖向排列 */
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 div.info-1 div.name {
+  position: absolute;
+  color: black;
+  z-index: 11;
+  left: 200px;
+  font-size: larger;
+  font-weight: bolder;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 div.info-1 div.wrapper {
+  border-top: 2px solid gray;
+  padding: 10px 0;
+  left: 200px;
+  top: 70px;
+  position: absolute;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 div.info-1 div.wrapper div.a {
+  flex-direction: column; /* 设置为竖向排列 */
+  display: flex;
+  justify-content: center;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API div.infomation2 div.info-1 div.wrapper div.a a {
+  font-size: medium;
+  color: black;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.API:hover div.infomation2 {
+  height: 400px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs {
+  position: relative;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 {
+  overflow: hidden;
+  transition: height ease-in-out;
+  transition-duration: 0.2s;
+  position: absolute;
+  width: 400px;
+  height: 0px;
+  top: 37px;
+  left: 0px;
+  background-color: white;
+  z-index: 11;
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-1 div.name {
+  margin-left: -56px;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-1 div.items {
+  border-top: 1px solid gray;
+  padding: 20px;
+  font-size: 12px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-1 div.items div.items-items {
+  border-top: 1px solid gray;
+  padding-top: 10px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-2 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background: rgba(222, 220, 220, 0.2980392157);
+  align-items: center;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-2 p.b {
+  font-size: small;
+  font-weight: lighter;
+  padding-left: 50px;
+  color: #4e4d4d;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-2 span.ren {
+  color: #55a5f6;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs div.infomation3 div.part-2 p {
+  margin-top: 20px;
+  padding-bottom: 0;
+  display: block;
+  font-size: 12px;
+}
+body header nav.wrapper-banner nav.wrapper div.middle div.aboutUs:hover div.infomation3 {
+  height: 400px;
+}
+body header nav.wrapper-banner nav.wrapper div.phone {
+  flex: 3 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav.wrapper-banner nav.wrapper div.phone i {
+  display: inline-block;
+  color: white;
+}
+body header nav.wrapper-banner nav.wrapper div.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+body header nav.wrapper-banner nav.wrapper div.right div.freeToRegister {
+  margin-left: 10px;
+  background-color: #0e86ff;
+  border-radius: 5px;
+}
+body header nav.wrapper-banner nav.wrapper div.right div.freeToRegister:hover {
+  color: #4e4d4d;
+  background-color: #0c69c6;
+}
+body header nav.wrapper-banner nav.wrapper div.right div a {
+  color: white;
+  text-decoration: none;
+}
+body header nav.wrapper-banner nav.wrapper div.right div i {
+  color: white;
+}
+body main div.mian-wrapper div.part1 {
+  width: 100%;
+  height: 400px;
+}
+body main div.mian-wrapper div.part1 .swiper {
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 90%;
+}
+body main div.mian-wrapper div.part1 .swiper div.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part1 .swiper div.img img {
+  width: 30%;
+}
+body main div.mian-wrapper div.part1 .swiper .swiper-slide-active {
+  color: #000;
+}
+body main div.mian-wrapper div.part2 {
+  width: 100%;
+  height: 280px;
+  background-image: url(../img/js1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part2 div.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main div.mian-wrapper div.part2 div.wrapper div.info {
+  margin-top: 10px;
+}
+body main div.mian-wrapper div.part2 div.wrapper div.info h2 {
+  color: white;
+  font-weight: bold;
+}
+body main div.mian-wrapper div.part3 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part3 div.wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part3 div.wrapper div.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main div.mian-wrapper div.part3 div.wrapper div.info div.p {
+  border: 2px solid rgba(248, 18, 18, 0);
+  margin-left: 80px;
+  font-size: larger;
+  font-weight: bolder;
+}
+body main div.mian-wrapper div.part3 div.wrapper div.info div.p:hover {
+  border-bottom: 2px solid #0e86ff;
+}
+body main div.mian-wrapper div.part4 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+}
+body main div.mian-wrapper div.part4 div.wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main div.mian-wrapper div.part4 div.wrapper div.h1 {
+  padding-bottom: 20px;
+}
+body main div.mian-wrapper div.part4 div.wrapper div.p {
+  font-weight: 500;
+  text-indent: 20px;
+  margin-top: 10px;
+}
+body main div.mian-wrapper div.part5 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/js8.png);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main div.mian-wrapper div.part5 div.wrapper {
+  width: 50%;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.h1 {
+  position: relative;
+  top: -100px;
+  left: 375px;
+  font-weight: bolder;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info1-wrapper div.info1 {
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info1-wrapper div.info1 div.info div.title {
+  margin: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info1-wrapper div.info1 img {
+  width: 20%;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info2 {
+  background-color: rgba(255, 255, 255, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  left: 35px;
+}
+body main div.mian-wrapper div.part5 div.wrapper div.info2 div.info div.title {
+  margin: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+body main div.mian-wrapper div.part7 {
+  width: 100%;
+  height: 500px;
+  background-color: #242b3a;
+}
+body main div.mian-wrapper div.part7 div.info-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body main div.mian-wrapper div.part7 div.info-wrapper div.info {
+  margin-top: 30px;
+  margin-left: 30px;
+  border-right: 2px solid #999;
+  padding-right: 30px;
+}
+body main div.mian-wrapper div.part7 div.info-wrapper div.info h3 {
+  margin-top: 30px;
+  color: white;
+}
+body main div.mian-wrapper div.part7 div.info-wrapper div.info p {
+  margin-top: 15px;
+  color: #999;
+}/*# sourceMappingURL=aboutus.css.map */
